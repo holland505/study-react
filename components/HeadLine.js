@@ -1,11 +1,13 @@
 import styles from '@/styles/Home.module.css'
 
-export default function HeadLine(props) {
+export function HeadLine(props) {
     console.log(props);
     return (
+        <div>
           <p>
-            Get started by editing&nbsp;{props.content}&nbsp;
-            <code className={styles.code}>pages/{props.title}.js</code>
+            Get started by editing&nbsp;
+            {props.children}
           </p>
+        </div>
     );
 }
